@@ -1,9 +1,20 @@
 //IMPORT BOOTSTRAP-5
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+//FONTAWESOME
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+
 @import "../../node_modules/aos/dist/aos.css";
 
+//ABSTRACTS
 @import "./abstracts/_variables";
-@import "./page/_header";
+@import "./abstracts/_utilities";
+
+//BASICS
 @import "./basics/_base";
+
+//COMPONENTS
 @import "./components/_slider";
