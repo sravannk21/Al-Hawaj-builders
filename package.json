@@ -4,7 +4,7 @@
   "description": "alhawaj builders",
   "main": "index.js",
   "scripts": {
-    "compile-sass": "sass --watch ./src/sass/main.scss ./build/css/style.css" 
+    "compile-sass": "sass --watch ./src/sass/main.scss ./build/css/style.css"
   },
   "author": "sravan nk",
   "license": "ISC",
@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.2",
+    "aos": "^3.0.0-beta.6",
     "autoprefixer": "^10.4.16",
     "bootstrap": "^5.3.2",
     "postcss-cli": "^10.1.0"

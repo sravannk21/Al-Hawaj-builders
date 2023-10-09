@@ -1,40 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | AL-Hawaj Builders</title>
     <link rel="stylesheet" href="./build/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./src/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./src/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
+
 <body>
     <header>
         <!--main-navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4">
             <div class="container">
-              <a class="navbar-brand" href="#">Al hawaj</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item me-4">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item me-4">
-                    <a class="nav-link" href="#">Gallery</a>
-                  </li>
-                  <li class="nav-item me-4">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                </ul>
-              </div>
+                <a class="navbar-brand" href="#">Al hawaj</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item me-4">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
+        </nav>
+        <!--slider-->
+        <div class="owl-carousel owl-theme" style="font-family: 'Italiana', serif;">
+            <div class="item bg-black">
+                <img src="./build/img/slider/1.jpg" class="opacity-75" alt="">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content text-capitalize">
+                            <div class="line d-none d-md-block"></div>
+                            <h2>we design spaces for people</h2>
+                            <h1>places that promote sense of place</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item bg-black">
+                <img src="./build/img/slider/2.png" class="opacity-75" alt="">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content text-capitalize">
+                            <div class="line animated bounceInLeft d-none d-md-block"></div>
+                            <h2>we design spaces for people</h2>
+                            <h1>places that promote sense of place</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item bg-black">
+                <img src="./build/img/slider/3.jpg" class="opacity-75" alt="">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content text-capitalize">
+                            <div class="line animated bounceInLeft d-none d-md-block"></div>
+                            <h2>we design spaces for people</h2>
+                            <h1>places that promote sense of place</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <script src="./build/js/script.js"></script>
     <script src="./src/bootstrap5/bootstrap.bundle.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./src/jquary/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!--script for slider in header-->
+    <script>
+        AOS.init();
+
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                dots: false,
+                nav: true,
+                autoplay: true,
+                animateOut: 'slideOutUp',
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+        });
+    </script>
 </body>
+
 </html>
