@@ -22377,4 +22377,35 @@ header:hover .owl-next {
   background-color: rgb(104, 104, 104);
 }
 
+.project {
+  position: relative;
+  background-color: black;
+}
+.project__project-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+.project:hover img {
+  filter: blur(1px) brightness(1.2);
+  opacity: 30%;
+  transition: all 0.3s ease;
+}
+.project:hover .project__project-info {
+  color: white;
+  display: block;
+  text-transform: capitalize;
+  display: block;
+}
+
+.btn-border {
+  transition: all 0.3s ease;
+}
+.btn-border:hover {
+  background-color: #393838;
+}
+
 /*# sourceMappingURL=style.css.map */

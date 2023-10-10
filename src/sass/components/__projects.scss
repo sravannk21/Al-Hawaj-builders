@@ -1,0 +1,23 @@
+.project {
+    position: relative;
+    background-color: black;
+    &__project-info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: none;
+        transition: all .3s ease-in-out;
+    }
+    &:hover img {
+        filter: blur(1px) brightness(1.2);
+        opacity: 30%;
+        transition: all .3s ease;
+    }
+    &:hover &__project-info {
+        color: white;
+        display: block;
+        text-transform: capitalize;
+        display: block;
+    }
+}

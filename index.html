@@ -42,7 +42,7 @@
             </div>
         </nav>
         <!--slider-->
-        <div class="owl-carousel owl-theme" style="font-family: 'Italiana', serif;">
+        <div id="home-slider" class="owl-carousel owl-theme" style="font-family: 'Italiana', serif;">
             <div class="item bg-black">
                 <img src="./build/img/slider/1.jpg" class="opacity-75" alt="">
                 <div class="cover">
@@ -143,6 +143,45 @@
                 <h2 class="display-5 fw-bold text-uppercase text-center">project gallery</h2>
                 <p class="text-center fst-normal mt-3 lh-lg text-muted col-lg-8 mx-auto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
             </div>
+
+            <div id="project-gallery" class="owl-carousel text-center mt-5">
+                <div class="project">
+                    <img src="./build/img/projects/1.jpeg" class="img-fluid" alt="">
+                    <div class="project__project-info">
+                        <h4 class="text-uppercase fw-light">Project name</h4>
+                        <div class="mt-4">
+                            <a href="#" class="text-capitalize py-2 px-4 border border-2 border-white btn-border text-white text-decoration-none">view more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="./build/img/projects/2.jpeg" class="img-fluid" alt="">
+                    <div class="project__project-info">
+                        <h4 class="text-uppercase fw-light">Project name</h4>
+                        <div class="mt-4">
+                            <a href="#" class="text-capitalize py-2 px-4 border border-2 border-white btn-border text-white text-decoration-none">view more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="./build/img/projects/3.jpeg" class="img-fluid" alt="">
+                    <div class="project__project-info">
+                        <h4 class="text-uppercase fw-light">Project name</h4>
+                        <div class="mt-4">
+                            <a href="#" class="text-capitalize py-2 px-4 border border-2 border-white btn-border text-white text-decoration-none">view more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="./build/img/projects/1.jpeg" class="img-fluid" alt="">
+                    <div class="project__project-info">
+                        <h4 class="text-uppercase fw-light">Project name</h4>
+                        <div class="mt-4">
+                            <a href="#" class="text-capitalize py-2 px-4 border border-2 border-white btn-border text-white text-decoration-none">view more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <script src="./build/js/script.js"></script>
@@ -155,7 +194,9 @@
         AOS.init();
 
         $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
+
+            //slider plugin
+            $("#home-slider").owlCarousel({
                 loop: true,
                 margin: 10,
                 dots: false,
@@ -171,6 +212,27 @@
                     },
                     1000: {
                         items: 1
+                    }
+                }
+            });
+
+            //project plugin
+            $("#project-gallery").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
                     }
                 }
             });
