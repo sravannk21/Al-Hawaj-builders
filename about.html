@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./src/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="./src/owl-carousel/owl.theme.default.min.css">
+    <link href="https://unpkg.com/pattern.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 
@@ -26,13 +27,13 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item me-4">
-                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                            <a class="nav-link" href="/">Home</a>
                         </li>
                         <li class="nav-item me-4">
                             <a class="nav-link" href="#">Gallery</a>
                         </li>
                         <li class="nav-item me-4">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link active" aria-current="page" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
@@ -45,6 +46,15 @@
 
     <!--MAIN-->
     <main>
+        <!--MISSION-->
+        <section class="u-padding-big w-25pc h-1by1 pattern-vertical-lines-xl slategray-lighter text-warning">
+            <div class="container opacity-100">
+                <h4 class="text-uppercase text-center fw-bold text-black">our mission</h4>
+                <p class="fs-3 fw-light col-lg-8 mx-auto lh-lg text-muted mt-3 text-center">
+                    our organizational spirit belives that where design meets passion & love with space, good architecture happens here
+                </p>
+            </div>
+        </section>
         <!--CONTACT-SECTION-->
         <section class="u-padding-big">
             <div class="container">
@@ -126,58 +136,7 @@
         AOS.init();
 
         $(document).ready(function () {
-
-            //project plugin 1
-            $("#project-gallery").owlCarousel({
-                loop: true,
-                margin: 10,
-                nav: false,
-                autoplay: true,
-                autoplayTimeout: 2000,
-                autoplayHoverPause: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 2
-                    },
-                    1000: {
-                        items: 3
-                    }
-                }
-            });
-
-            //project plugin 2
-            $("#project-gallery2").owlCarousel({
-                loop: true,
-                margin: 10,
-                nav: false,
-                autoplay: true,
-                autoplayTimeout: 2000,
-                autoplayHoverPause: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 3
-                    },
-                    1000: {
-                        items: 4
-                    }
-                }
-            });
-
-            //testimonial
-            $("#testimonial").owlCarousel({
-                loop: true,
-                margin: 10,
-                autoplay: true,
-                autoplayTimeout: 2000,
-                autoplayHoverPause: true,
-                items: 1,
-            });
+            console.log("working")
         });
     </script>
 </body>
