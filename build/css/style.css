@@ -22177,7 +22177,7 @@ readers do not read off random characters that represent icons */
   content: "\f3f6";
 }
 
-.u-margin-big {
+.u-padding-big {
   padding: 6rem 0;
 }
 
@@ -22369,6 +22369,12 @@ header:hover .owl-prev {
 header:hover .owl-next {
   right: 0px;
   opacity: 1;
+}
+
+.line {
+  width: 100%;
+  height: 1.5px;
+  background-color: rgb(104, 104, 104);
 }
 
 /*# sourceMappingURL=style.css.map */
