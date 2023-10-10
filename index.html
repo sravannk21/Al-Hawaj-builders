@@ -227,6 +227,33 @@
             <h5 class="text-center text-uppercase my-5 fs-2 fw-light">title for below section</h5>
             <img src="./build/img/projects/1.jpeg" width="100%" class="img-fluid" alt="">
         </section>
+
+        <!--TESTIMONIAL SECTION-->
+        <section class="u-padding-big">
+            <h5 class="text-center text-uppercase my-5 fs-2 fw-light">testimonials</h5>
+            <div class="container bg-dark py-5">
+                <div class="owl-carousel" id="testimonial">
+                    <div>
+                        <p class="text-white col-lg-8 mx-auto text-center fst-normal mt-3 lh-lg">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <h4 class="text-center fs-5"><i>Testimonial user name</i></h4>
+                    </div>
+                    <div>
+                        <p class="text-white col-lg-8 mx-auto text-center fst-normal mt-3 lh-lg">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <h4 class="text-center fs-5"><i>Testimonial user name</i></h4>
+                    </div>
+                    <div>
+                        <p class="text-white col-lg-8 mx-auto text-center fst-normal mt-3 lh-lg">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <h4 class="text-center fs-5"><i>Testimonial user name</i></h4>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="./build/js/script.js"></script>
     <script src="./src/bootstrap5/bootstrap.bundle.js"></script>
@@ -300,6 +327,16 @@
                         items: 4
                     }
                 }
+            });
+
+            //testimonial
+            $("#testimonial").owlCarousel({
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                items: 1,
             });
         });
     </script>
