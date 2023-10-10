@@ -22381,6 +22381,10 @@ header:hover .owl-next {
   background-color: rgb(104, 104, 104);
 }
 
+.contact-label {
+  rotate: -90deg;
+}
+
 .project {
   position: relative;
   background-color: black;
