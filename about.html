@@ -210,16 +210,54 @@
         </section>
 
         <!--MEET-OUR-TEAM-->
-        <section class="u-padding-big bg-light">
-            <div class="container">
+        <section class="pt-5 bg-light">
+            <div class="container pt-5">
                 <h3 class="text-center text-capitalize text-muted display-5 lh-base">
                     we meet new people <span class="text-dark">everyday</span> coming with <span class="text-dark">new dreams and hope our effort is to make them true</span>
                 </h3>
             </div>
+
+            <!--TEAM-MEMBERS-CAROUSEL-->
+            <div class="container-fluid bg-white">
+                <div class="container u-padding-medium w-25pc h-1by1 pattern-vertical-lines-xl slategray-lighter text-warning my-5">
+                    <h2 class="text-uppercase fw-bold text-black text-center display-5">our team</h2>
+                    <div class="row">
+                        <div class="col-md-8 text-center mt-5 mx-auto">
+                            <div class="owl-carousel" id="ourTeam">
+                                <div>
+                                    <img src="./build/img/team/team-member-sample.jpg" class="img-fluid" alt="">
+                                    <h4 class="text-capitalize text-start text-black mt-4">Benjamin brook</h4>
+                                    <p class="text-muted text-start">title of member &mdash;</p>
+                                </div>
+                                <div>
+                                    <img src="./build/img/team/team-member-sample.jpg" class="img-fluid" alt="">
+                                    <h4 class="text-capitalize text-start text-black mt-4">Benjamin brook</h4>
+                                    <p class="text-muted text-start">title of member &mdash;</p>
+                                </div>
+                                <div>
+                                    <img src="./build/img/team/team-member-sample.jpg" class="img-fluid" alt="">
+                                    <h4 class="text-capitalize text-start text-black mt-4">Benjamin brook</h4>
+                                    <p class="text-muted text-start">title of member &mdash;</p>
+                                </div>
+                                <div>
+                                    <img src="./build/img/team/team-member-sample.jpg" class="img-fluid" alt="">
+                                    <h4 class="text-capitalize text-start text-black mt-4">Benjamin brook</h4>
+                                    <p class="text-muted text-start">title of member &mdash;</p>
+                                </div>
+                                <div>
+                                    <img src="./build/img/team/team-member-sample.jpg" class="img-fluid" alt="">
+                                    <h4 class="text-capitalize text-start text-black mt-4">Benjamin brook</h4>
+                                    <p class="text-muted text-start">title of member &mdash;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--CONTACT-SECTION-->
-        <section class="u-padding-big">
+        <section class="u-padding-big bg-light">
             <div class="container">
                 <div class="row m-0 p-0 gx-5">
                     <div class="col-md-6">
@@ -345,6 +383,24 @@
                 }
 
             });
+
+            //our-team-carousel
+            $('#ourTeam').owlCarousel({
+                loop: true,
+                margin: 30,
+                autoplay: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            })
         });
     </script>
 </body>
