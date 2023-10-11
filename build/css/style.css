@@ -22181,6 +22181,10 @@ readers do not read off random characters that represent icons */
   padding: 6rem 0;
 }
 
+.u-padding-top {
+  padding-top: 6rem;
+}
+
 .u-padding-medium {
   padding: 3rem 0;
 }
@@ -22422,6 +22426,21 @@ header:hover .owl-next {
 }
 .btn-border:hover {
   background-color: #393838;
+}
+
+.gallery {
+  background-color: black;
+}
+.gallery:hover .gallery__photo {
+  opacity: 30%;
+  transition: all 0.3s ease-in-out;
+}
+.gallery:hover .gallery__photo-nav {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.gallery__photo-nav {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,14 @@
+.gallery{
+  background-color: black;
+  &:hover &__photo {
+    opacity: 30%;
+    transition: all .3s ease-in-out;
+  }
+  &:hover &__photo-nav {
+    opacity: 1;
+    transition: all .3s ease-in-out;
+  }
+  &__photo-nav {
+    opacity: 0;
+  }
+}
