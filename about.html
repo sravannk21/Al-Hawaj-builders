@@ -285,6 +285,35 @@
             </div>
         </section>
 
+        <!--BRANDS-->
+        <section>
+            <div class="container py-5">
+                <div class="owl-carousel" id="brands">
+                    <div>
+                        <img src="./build/img/brands/dummy.png" class="img-fluid" alt="">
+                    </div>
+                    <div>
+                        <img src="./build/img/brands/dummy.png" class="img-fluid" alt="">
+                    </div>
+                    <div>
+                        <img src="./build/img/brands/dummy.png" class="img-fluid" alt="">
+                    </div>
+                    <div>
+                        <img src="./build/img/brands/dummy.png" class="img-fluid" alt="">
+                    </div>
+                    <div>
+                        <img src="./build/img/brands/dummy.png" class="img-fluid" alt="">
+                    </div>
+                    <div>
+                        <img src="./build/img/brands/dummy.png" class="img-fluid" alt="">
+                    </div>
+                    <div>
+                        <img src="./build/img/brands/dummy.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!--FOOTER-->
         <footer>
             <div class="container u-padding-big bg-dark text-white text-center mb-5">
@@ -398,6 +427,25 @@
                     },
                     1000: {
                         items: 3
+                    }
+                }
+            })
+
+            //our-team-carousel
+            $('#brands').owlCarousel({
+                loop: true,
+                margin: 30,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 6
                     }
                 }
             })
