@@ -22460,10 +22460,8 @@ header:hover .owl-next {
 }
 
 .popup-content {
-  background-color: #fefefe;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
   width: 50%;
 }
 
@@ -22485,16 +22483,6 @@ header:hover .owl-next {
   visibility: visible;
   opacity: 1;
   transform: scale(1);
-}
-
-.more-articles {
-  margin: 30px 30px 50px;
-  font-size: 20px;
-}
-
-.more-articles a {
-  margin: 0 10px;
-  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
