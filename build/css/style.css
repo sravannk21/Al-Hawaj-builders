@@ -22485,4 +22485,122 @@ header:hover .owl-next {
   transform: scale(1);
 }
 
+.gallery-alpine {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+  transition: 0.25s;
+}
+.gallery-alpine .credit {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: inherit;
+}
+.gallery-alpine .options {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  overflow: hidden;
+  min-width: 600px;
+  max-width: 900px;
+  width: calc(100% - 100px);
+  height: 400px;
+}
+.gallery-alpine .options .option {
+  position: relative;
+  overflow: hidden;
+  min-width: 60px;
+  margin: 10px;
+  background-image: var(--optionBackground, var(--defaultBackground, #E6E9ED));
+  background-size: auto 120%;
+  background-position: center;
+  cursor: pointer;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+.gallery-alpine .options .option.active {
+  flex-grow: 10000;
+  transform: scale(1);
+  max-width: 600px;
+  margin: 0px;
+  border-radius: 40px;
+  background-size: auto 100%;
+}
+.gallery-alpine .options .option.active .label {
+  bottom: 20px;
+  left: 20px;
+}
+.gallery-alpine .options .option.active .label .info > div {
+  left: 0px;
+  opacity: 1;
+}
+.gallery-alpine .options .option:not(.active) {
+  flex-grow: 1;
+  border-radius: 30px;
+}
+.gallery-alpine .options .option:not(.active) .label {
+  bottom: 10px;
+  left: 10px;
+}
+.gallery-alpine .options .option:not(.active) .label .info > div {
+  left: 20px;
+  opacity: 0;
+}
+.gallery-alpine .options .option .label {
+  display: flex;
+  position: absolute;
+  right: 0px;
+  height: 40px;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+.gallery-alpine .options .option .label .icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: white;
+  color: var(--defaultBackground);
+}
+.gallery-alpine .options .option .label .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  color: white;
+  white-space: pre;
+}
+.gallery-alpine .options .option .label .info > div {
+  position: relative;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+}
+.gallery-alpine .options .option .label .info .main {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.gallery-alpine .options .option .label .info .sub {
+  transition-delay: 0.1s;
+}
+
+.gallery-item:hover {
+  background-color: #000;
+  color: #fff;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+.gallery-item:hover .gallery-item__caption {
+  padding: 1rem;
+  transition: all 0.3s;
+}
+.gallery-item:hover .gallery-item__photo {
+  opacity: 70%;
+  transition: all 0.3s ease-in;
+}
+
 /*# sourceMappingURL=style.css.map */

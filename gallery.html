@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./src/owl-carousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="./src/lightbox-gallery/lightbox.min.css">
+    <link rel="stylesheet" href="./src/jquary-flipstar/jquery.flipster.min.css">
 </head>
 
 <body>
@@ -61,344 +62,85 @@
 
         <section class="u-padding-big">
             <div class="container">
-                <div class="row m-0 p-0 g-3">
-                    <div class="col-md-3">
-                        <div class="gallery position-relative">
-                            <img class="img-fluid gallery__photo" src="./build/img/projects/2.jpeg" alt="">
-                            <span class="gallery__photo-nav open-popup">
-                                <i
-                                    class="fa-solid popup-btn fa-link fs-3 position-absolute top-50 start-50 translate-middle text-white"></i>
-                            </span>
-                        </div>
-                        <div class="popup-container popup-wrapper">
-                            <div class="popup-content">
-                                <div class="owl-carousel owl-theme">
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/2.jpeg" alt="">
-                                    </div>
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/3.jpeg" alt="">
-                                    </div>
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/5.jpeg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <article id="demo-carousel">
+                    <div id="carousel">
+                        <ul class="flip-items">
+                            <li data-flip-title="1" data-flip-category="Kozhikode">
+                                <img src="./build/img/projects/5.jpeg" class="mt-5">
+                             </li>
+                            <li data-flip-title="2" data-flip-category="Kozhikode">
+                                <img src="./build/img/projects/5.jpeg" class="mt-5">
+                            </li>
+                            <li data-flip-title="3" data-flip-category="Kozhikode">
+                                <img src="./build/img/projects/text4.gif" class="mt-5">
+                            </li>
+                            <li data-flip-title="1" data-flip-category="Kannur">
+                                <img src="./build/img/projects/text5.gif" class="mt-5">
+                            </li>
+                            <li data-flip-title="2" data-flip-category="Kannur">
+                                <img src="./build/img/projects/text6.gif" class="mt-5">
+                            </li>
+                            <li data-flip-title="3" data-flip-category="Kannur">
+                                <img src="./build/img/projects/text7.gif" class="mt-5">
+                            </li>
+                            <li data-flip-title="4" data-flip-category="Kannur">
+                                <img src="./build/img/projects/text8.gif" class="mt-5">
+                            </li>
+                            <li data-flip-title="1" data-flip-category="Kasargod">
+                                <img src="./build/img/projects/text9.gif" class="mt-5">
+                            </li>
+                            <li data-flip-title="2" data-flip-category="Kasargod">
+                                <img src="./build/img/projects/text10.gif" class="mt-5">
+                            </li>
+                            <li data-flip-title="3" data-flip-category="Kasargod">
+                                <img src="./build/img/projects/text11.gif" class="mt-5">
+                            </li>
+                            <li data-flip-title="4" data-flip-category="Kasargod">
+                                <img src="./build/img/projects/text12.gif" class="mt-5">
+                            </li>
+                            <li data-flip-title="1" data-flip-category="Kochi">
+                                <img src="./build/img/projects/text13.gif" class="mt-5">
+                            </li>
+                            <li data-flip-title="2" data-flip-category="Kochi">
+                                <img src="./build/img/projects/text14.gif" class="mt-5">
+                            </li>
+                        </ul>
                     </div>
-
-                    <div class="col-md-3">
-                        <div class="gallery position-relative">
-                            <img class="img-fluid gallery__photo" src="./build/img/projects/5.jpeg" alt="">
-                            <span class="gallery__photo-nav open-popup">
-                                <i
-                                    class="fa-solid popup-btn fa-link fs-3 position-absolute top-50 start-50 translate-middle text-white"></i>
-                            </span>
-                        </div>
-                        <div class="popup-container popup-wrapper">
-                            <div class="popup-content">
-                                <div class="owl-carousel owl-theme">
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/5.jpeg" alt="">
-                                    </div>
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/5.jpeg" alt="">
-                                    </div>
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/5.jpeg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="gallery position-relative">
-                            <img class="img-fluid gallery__photo" src="./build/img/projects/2.jpeg" alt="">
-                            <span class="gallery__photo-nav open-popup">
-                                <i
-                                    class="fa-solid popup-btn fa-link fs-3 position-absolute top-50 start-50 translate-middle text-white"></i>
-                            </span>
-                        </div>
-                        <div class="popup-container popup-wrapper">
-                            <div class="popup-content">
-                                <div class="owl-carousel owl-theme">
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/2.jpeg" alt="">
-                                    </div>
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/3.jpeg" alt="">
-                                    </div>
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/5.jpeg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="gallery position-relative">
-                            <img class="img-fluid gallery__photo" src="./build/img/projects/6.jpeg" alt="">
-                            <span class="gallery__photo-nav open-popup">
-                                <i
-                                    class="fa-solid popup-btn fa-link fs-3 position-absolute top-50 start-50 translate-middle text-white"></i>
-                            </span>
-                        </div>
-                        <div class="popup-container popup-wrapper">
-                            <div class="popup-content">
-                                <div class="owl-carousel owl-theme">
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/2.jpeg" alt="">
-                                    </div>
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/3.jpeg" alt="">
-                                    </div>
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/5.jpeg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="gallery position-relative">
-                            <img class="img-fluid gallery__photo" src="./build/img/projects/2.jpeg" alt="">
-                            <span class="gallery__photo-nav open-popup">
-                                <i
-                                    class="fa-solid popup-btn fa-link fs-3 position-absolute top-50 start-50 translate-middle text-white"></i>
-                            </span>
-                        </div>
-                        <div class="popup-container popup-wrapper">
-                            <div class="popup-content">
-                                <div class="owl-carousel owl-theme">
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/2.jpeg" alt="">
-                                    </div>
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/3.jpeg" alt="">
-                                    </div>
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/5.jpeg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="gallery position-relative">
-                            <img class="img-fluid gallery__photo" src="./build/img/projects/2.jpeg" alt="">
-                            <span class="gallery__photo-nav open-popup">
-                                <i
-                                    class="fa-solid popup-btn fa-link fs-3 position-absolute top-50 start-50 translate-middle text-white"></i>
-                            </span>
-                        </div>
-                        <div class="popup-container popup-wrapper">
-                            <div class="popup-content">
-                                <div class="owl-carousel owl-theme">
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/2.jpeg" alt="">
-                                    </div>
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/3.jpeg" alt="">
-                                    </div>
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/5.jpeg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="gallery position-relative">
-                            <img class="img-fluid gallery__photo" src="./build/img/projects/2.jpeg" alt="">
-                            <span class="gallery__photo-nav open-popup">
-                                <i
-                                    class="fa-solid popup-btn fa-link fs-3 position-absolute top-50 start-50 translate-middle text-white"></i>
-                            </span>
-                        </div>
-                        <div class="popup-container popup-wrapper">
-                            <div class="popup-content">
-                                <div class="owl-carousel owl-theme">
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/2.jpeg" alt="">
-                                    </div>
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/3.jpeg" alt="">
-                                    </div>
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/5.jpeg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="gallery position-relative">
-                            <img class="img-fluid gallery__photo" src="./build/img/projects/2.jpeg" alt="">
-                            <span class="gallery__photo-nav open-popup">
-                                <i
-                                    class="fa-solid popup-btn fa-link fs-3 position-absolute top-50 start-50 translate-middle text-white"></i>
-                            </span>
-                        </div>
-                        <div class="popup-container popup-wrapper">
-                            <div class="popup-content">
-                                <div class="owl-carousel owl-theme">
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/2.jpeg" alt="">
-                                    </div>
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/3.jpeg" alt="">
-                                    </div>
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/5.jpeg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="gallery position-relative">
-                            <img class="img-fluid gallery__photo" src="./build/img/projects/2.jpeg" alt="">
-                            <span class="gallery__photo-nav open-popup">
-                                <i
-                                    class="fa-solid popup-btn fa-link fs-3 position-absolute top-50 start-50 translate-middle text-white"></i>
-                            </span>
-                        </div>
-                        <div class="popup-container popup-wrapper">
-                            <div class="popup-content">
-                                <div class="owl-carousel owl-theme">
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/2.jpeg" alt="">
-                                    </div>
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/3.jpeg" alt="">
-                                    </div>
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/5.jpeg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="gallery position-relative">
-                            <img class="img-fluid gallery__photo" src="./build/img/projects/2.jpeg" alt="">
-                            <span class="gallery__photo-nav open-popup">
-                                <i
-                                    class="fa-solid popup-btn fa-link fs-3 position-absolute top-50 start-50 translate-middle text-white"></i>
-                            </span>
-                        </div>
-                        <div class="popup-container popup-wrapper">
-                            <div class="popup-content">
-                                <div class="owl-carousel owl-theme">
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/2.jpeg" alt="">
-                                    </div>
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/3.jpeg" alt="">
-                                    </div>
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/5.jpeg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="gallery position-relative">
-                            <img class="img-fluid gallery__photo" src="./build/img/projects/2.jpeg" alt="">
-                            <span class="gallery__photo-nav open-popup">
-                                <i
-                                    class="fa-solid popup-btn fa-link fs-3 position-absolute top-50 start-50 translate-middle text-white"></i>
-                            </span>
-                        </div>
-                        <div class="popup-container popup-wrapper">
-                            <div class="popup-content">
-                                <div class="owl-carousel owl-theme">
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/2.jpeg" alt="">
-                                    </div>
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/3.jpeg" alt="">
-                                    </div>
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/5.jpeg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="gallery position-relative">
-                            <img class="img-fluid gallery__photo" src="./build/img/projects/2.jpeg" alt="">
-                            <span class="gallery__photo-nav open-popup">
-                                <i
-                                    class="fa-solid popup-btn fa-link fs-3 position-absolute top-50 start-50 translate-middle text-white"></i>
-                            </span>
-                        </div>
-                        <div class="popup-container popup-wrapper">
-                            <div class="popup-content">
-                                <div class="owl-carousel owl-theme">
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/2.jpeg" alt="">
-                                    </div>
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/3.jpeg" alt="">
-                                    </div>
-                                    <div>
-                                        <span class="close">&times;</span>
-                                        <img class="img-fluid gallery__photo" src="./build/img/projects/5.jpeg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
+                </article>
             </div>
+        </section>
+
+        <section class="u-padding-big">
+            <div class="container">
+
+                <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                    <div class="d-block mb-4 text-center p-md-3 p-4">
+                      <div class="gallery-item">
+                        <img src="./build/img/projects/project1.webp" class="img-fluid gallery-item__photo" alt="">
+                        <h6 class="text-start mt-2 py-3 gallery-item__caption">Xiami Office Building <span class="text-white ms-2">&rarr;</span></h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="d-block mb-4 text-center p-md-3 p-4">
+                      <div class="gallery-item">
+                        <img src="./build/img/projects/project2.webp" class="img-fluid gallery-item__photo" alt="">
+                        <h6 class="text-start mt-2 py-3 gallery-item__caption">Xiami Office Building <span class="text-white ms-2">&rarr;</span></h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="d-block mb-4 text-center p-md-3 p-4">
+                      <div class="gallery-item">
+                        <img src="./build/img/projects/project3.webp" class="img-fluid gallery-item__photo" alt="">
+                        <h6 class="text-start mt-2 py-3 gallery-item__caption">Xiami Office Building <span class="text-white ms-2">&rarr;</span></h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </section>
 
         <!--FOOTER-->
@@ -460,49 +202,20 @@
     <script src="./build/js/script.js"></script>
     <script src="./src/bootstrap5/bootstrap.bundle.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="./src/jquary/jquery-3.7.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="./src/lightbox-gallery/lightbox.js"></script>
+    <script src="./src/jquary-flipstar/jquery.min.js"></script>
+    <script src="./src/jquary-flipstar/jquery.flipster.min.js"></script>
     <!--script for slider in header-->
     <script>
         AOS.init();
 
         $(document).ready(function () {
-            var $popup = $('.popup-wrapper');
-            var $btn = $('.popup-btn');
-            var $span = $('.close');
 
-            // Display the popup when the button is clicked
-            $btn.on('click', function () {
-                $popup.addClass('show');
-            });
-
-            // Close the popup when the close button is clicked
-            $span.on('click', function () {
-                $popup.removeClass('show');
-            });
-
-            // Close the popup when clicking outside of it
-            $(window).on('click', function (event) {
-                if (event.target === $popup[0]) {
-                    $popup.removeClass('show');
-                }
-            });
-
-            $('.owl-carousel').owlCarousel({
-                loop: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 1
-                    },
-                    1000: {
-                        items: 1
-                    }
-                }
-            })
+var carousel = $("#carousel").flipster({
+                        style: 'carousel',
+                        spacing: -0.5,
+                        nav: true,
+                        buttons:   true,
+                    });
         });
     </script>
 </body>
