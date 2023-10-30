@@ -194,3 +194,14 @@
       transition: all .3s ease-in;
    }
 }
+
+.owl-dots {
+   font-size: 0rem;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.owl-dot span {
+   background: white !important;
+}
