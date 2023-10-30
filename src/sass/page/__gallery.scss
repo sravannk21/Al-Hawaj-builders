@@ -179,7 +179,7 @@
 
 .gallery-item {
    &:hover {
-      background-color: #000;
+      background-color: #2d2d2d;
       color: #fff;
       transition: all .3s ease-in;
       cursor: pointer;
@@ -187,9 +187,10 @@
    &:hover &__caption {
       padding: 1rem;
       transition: all .3s;
+      color: #fff;
    }
    &:hover &__photo {
-      opacity: 70%;
+      opacity: 60%;
       transition: all .3s ease-in;
    }
 }

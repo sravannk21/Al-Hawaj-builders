@@ -22589,7 +22589,7 @@ header:hover .owl-next {
 }
 
 .gallery-item:hover {
-  background-color: #000;
+  background-color: #2d2d2d;
   color: #fff;
   transition: all 0.3s ease-in;
   cursor: pointer;
@@ -22597,9 +22597,10 @@ header:hover .owl-next {
 .gallery-item:hover .gallery-item__caption {
   padding: 1rem;
   transition: all 0.3s;
+  color: #fff;
 }
 .gallery-item:hover .gallery-item__photo {
-  opacity: 70%;
+  opacity: 60%;
   transition: all 0.3s ease-in;
 }
 
